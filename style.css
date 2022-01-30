@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    grid-template-areas:
+        "d d d d"  
+        "one two three a"  
+        "four five six s"  
+        "seven eight nine m"  
+        "zero c e di";
+    align-items: start;
+}
+
+.display {
+    grid-area: d;
+
+    border: orange solid 2px;
+    background-color: antiquewhite;
+    height: 96px;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.add {
+    grid-area: a;
+}
+
+.subtract {
+    grid-area: s;
+}
+
+.multiply {
+    grid-area: m;
+}
+
+.divide {
+    grid-area: di;
+}
+
+.equals {
+    grid-area: e;
+}
+
+.clear {
+    grid-area: c;
+}
+
+.btn {
+    border: orange solid 2px;
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+
+}
