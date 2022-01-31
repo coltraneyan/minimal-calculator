@@ -1,1 +1,1 @@
-# simple-calculator
+# Minimal Calculator
