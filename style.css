@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
 .calculator {
     display: grid;
@@ -20,14 +23,15 @@
 .display {
     grid-area: d;
 
-    border: orange solid 2px;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     height: 96px;
     width: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .one {
@@ -94,10 +98,49 @@
     grid-area: c;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+}
+
 .btn {
-    border: orange solid 2px;
     height: 100px;
     width: 100px;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.btn-op {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.btn-eq {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.btn-cl {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    filter: drop-shadow(2px 3px 2px #696969);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }

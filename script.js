@@ -1,6 +1,7 @@
 let firstOperand = ''
 let secondOperand = ''
 let currentOperator = ''
+let operatorToggle = false;
 
 const numClick = document.querySelectorAll('.btn');
 const opClick = document.querySelectorAll('.btn-op');
@@ -43,24 +44,37 @@ for (const num of numClick) {
         if (firstOperand === '') {
             firstOperand = num.value;
             display.textContent = `${firstOperand}`;
-        } else {
-            secondOperand = num.value;
-            display.textContent = `${secondOperand}`
-            firstOperand = operate(currentOperator, firstOperand, num.value);
-            secondNumber - ''
-    }
+        } else if (operatorToggle == false) {
+            firstOperand = `${firstOperand}${num.value}`;
+            display.textContent = `${firstOperand}`;
+        } else if (operatorToggle == true) {
+            secondOperand = `${secondOperand}${num.value}`
+            display.textContent = `${secondOperand}`;
+        }
     });
 }
 
 for (const op of opClick) {
     op.addEventListener("click", function() {
+        if (operatorToggle) {
+        firstOperand = operate(currentOperator, firstOperand, secondOperand);
+        display.textContent = `${firstOperand}`
+        secondOperand = ''
         currentOperator = op.value;
+        operatorToggle = true
+    } else {
+        currentOperator = op.value;
+        operatorToggle = true
+    }
     })
 }
 
 runDisplay.addEventListener("click", function() {
+    firstOperand = operate(currentOperator, firstOperand, secondOperand);
     display.textContent = `${firstOperand}`
+    secondOperand = ''
     currentOperator = '';
+    operatorToggle = false;
 })
 
 clearDisplay.addEventListener("click", function() {
@@ -68,4 +82,5 @@ clearDisplay.addEventListener("click", function() {
     secondOperand = '';
     currentOperator = '';
     display.textContent = `${firstOperand}`
+    operatorToggle = false;
 })
