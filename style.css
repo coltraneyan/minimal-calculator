@@ -1,10 +1,17 @@
+body {
+    background-color: #e6e3df;
+  }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 50px;
+    color: #363636;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #363636;
 }
 .calculator {
     display: grid;
@@ -23,7 +30,12 @@
 .display {
     grid-area: d;
 
-    background-color: whitesmoke;
+    border-radius: 45px;
+    background-color: #e6e3df
+    -moz-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
     height: 96px;
     width: auto;
 
@@ -99,48 +111,57 @@
 }
 
 button {
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #e6e3df;
+
+    border-radius: 50%;
+    background-color: #e6e3df;
+    
+    -moz-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+    color: #363636;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #363636;
 }
 
 .btn {
     height: 100px;
     width: 100px;
-    background-color: whitesmoke;
+    background-color: #e6e3df;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 
 }
 
 .btn-op {
     height: 100px;
     width: 100px;
-    background-color: whitesmoke;
+    background-color: #e6e3df;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .btn-eq {
     height: 100px;
     width: 100px;
-    background-color: whitesmoke;
+    background-color: #e6e3df;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .btn-cl {
     height: 100px;
     width: 100px;
-    background-color: whitesmoke;
-    filter: drop-shadow(2px 3px 2px #696969);
+    background-color: #e6e3df;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
